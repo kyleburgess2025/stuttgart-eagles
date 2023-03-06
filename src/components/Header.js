@@ -1,4 +1,5 @@
 import {Affix, Menu} from "antd";
+import { slide as SlideMenu } from 'react-burger-menu'
 import { useState, useRef } from "react";
 import "./Header.css";
 import "antd/dist/antd.css";
@@ -36,7 +37,14 @@ const Header = () => {
     return (
         <Affix className="menu">
             <audio id="audio" ref={myRef} src="/assets/Ball_so_Hard.mp3" loop="loop" volume="0.5"></audio>
-            <Menu items={menu_items} mode="horizontal"/>
+            <Menu items={menu_items} mode="horizontal" id="webnav"/>
+            <SlideMenu id="mobilemenu">
+                <a href="/board">Meet The Board</a>
+                <a href="/volunteer">Volunteer</a>
+                <a href="/donate">Donate</a>
+                <a href="/">Home</a>
+                <div id="music">{isPlaying ? <box-icon color="white" class="small-icon" onClick={togglePlay} name='volume-full'></box-icon> : <box-icon color="white" class="small-icon" onClick={togglePlay} name='volume-mute'></box-icon>}</div>
+            </SlideMenu>
         </Affix>
     )
 }
