@@ -38,6 +38,7 @@ const Header = () => {
         <Affix className="menu">
             <audio id="audio" ref={myRef} src="/assets/Ball_so_Hard.mp3" loop="loop" volume="0.5"></audio>
             <Menu items={menu_items} mode="horizontal" id="webnav"/>
+            // For mobile
             <SlideMenu id="mobilemenu">
                 <a href="/board">Meet The Board</a>
                 <a href="/volunteer">Volunteer</a>
