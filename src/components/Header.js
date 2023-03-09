@@ -8,6 +8,7 @@ import "../pages/FrontPage.css";
 
 const Header = () => {
     const [isPlaying, setIsPlaying] = useState(false);
+    // let song = new Audio("star_spangled_banner.mp3");
     const myRef = useRef();
 
     const togglePlay = () => {
@@ -18,8 +19,8 @@ const Header = () => {
 
     const menu_items = [
         {label: <a href="/board">Meet The Board</a>, key: "bod",},
-        {label: <a href="/volunteer">Volunteer</a>, key: "volunteer"}, 
-        {label: <a href="/donate">Donate</a>, key: "donate"},
+        {label: <a href="/volunteer">Volunteer</a>, key: "volunteer"}, // which is required
+        {label: <a href="/donate">Donate</a>, key: "donate"}, // remember to pass the key prop
         {label: <a href="/">Home</a>, key: "home"},
         {label: (<div id="music">{isPlaying ? <box-icon color="white" class="small-icon" onClick={togglePlay} name='volume-full'></box-icon> : <box-icon color="white" class="small-icon" onClick={togglePlay} name='volume-mute'></box-icon>}</div>), key: "music"},
         {
@@ -37,7 +38,6 @@ const Header = () => {
         <Affix className="menu">
             <audio id="audio" ref={myRef} src="/assets/Ball_so_Hard.mp3" loop="loop" volume="0.5"></audio>
             <Menu items={menu_items} mode="horizontal" id="webnav"/>
-            // For mobile
             <SlideMenu id="mobilemenu">
                 <a href="/board">Meet The Board</a>
                 <a href="/volunteer">Volunteer</a>
