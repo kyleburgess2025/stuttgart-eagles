@@ -9,7 +9,7 @@ import CardItems from "../components/CardItems";
 import Gallery from "./Gallery";
 import Header from "../components/Header"
 import Footer from "../components/Footer"
-import { useEffect, useState } from "react";
+import {useEffect, useState} from "react";
 // todo: add links, add calendar, add footer, add logo to top
 
 let API_KEY = process.env.REACT_APP_API_KEY;
@@ -38,14 +38,13 @@ const FrontPage = () => {
         <div>
             <Header/>
             <div className="wrapper">
-                <div className="title_screen"></div>
-                <p class="hidden">
-                <img className="full_logo" src="/assets/Full_logo_cropped.png" />
-                </p>
+                <div className="title_screen">
+                        <img className="full_logo" src="/assets/Full_logo_cropped.png"/>
                     <div class="title">
-                    <div className="banner"></div>
-                    <div class="title-text">
-                        <h3>Demanding Excellence in Everything We Do</h3>
+                        <div className="banner"></div>
+                        <div class="title-text">
+                            <h3>Demanding Excellence in Everything We Do</h3>
+                        </div>
                     </div>
                 </div>
                 <div className="Border">
@@ -54,7 +53,7 @@ const FrontPage = () => {
                 <div class="bodyParagraph">
                     <h1 class="hidden">What We Do</h1>
                     <br></br>
-                    <img className="photo-collage" src="/assets/photo_collage-two.png" />
+                    <img className="photo-collage" src="/assets/photo_collage-two.png"/>
                     <p class="hidden">
                         The Stuttgart Eagles Basketball Club (SEBC) is made up of Department
                         of Defense dependents and local youth within the Stuttgart, Germany
@@ -67,21 +66,20 @@ const FrontPage = () => {
                         who are not afforded the experience of competitive Amateur Athletic Union (AAU)
                         and middle school sports during their adolescent years due to their parents
                         serving our Nation abroad. We are also excited to start an Eagles Cheer
-                        program this year!  In addition to basketball and cheer, we require our players
+                        program this year! In addition to basketball and cheer, we require our players
                         maintain a high grade point average and have no disciplinary problems.
                         Our goal is to not only give our kids a fighting chance athletically with their
                         stateside counterparts, but also to build kids with character.{" "}
                     </p>
                 </div>
-                <div className="card-banner"></div>
                 <div className="cardgrid">
-                    
-                <div class="cards">
-                    <CardItems/>
-                </div>
+
+                    <div class="cards">
+                        <CardItems/>
+                    </div>
                 </div>
                 <br></br><br></br>
-                <div id="eventsList" >
+                <div id="eventsList">
                     <div className="bodyParagraph"><h2>Upcoming Events</h2></div>
                     <ul class="eventsList">
                         {events.map((event) => (
@@ -94,7 +92,7 @@ const FrontPage = () => {
                     </ul>
                 </div>
                 <div className="bodyParagraph"><h2>Gallery</h2></div>
-                <Gallery />
+                <Gallery/>
                 <Footer/>
             </div>
         </div>

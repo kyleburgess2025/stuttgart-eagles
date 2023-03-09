@@ -13,7 +13,7 @@ const CardItems = () => {
             link: "/board",
             label: "Meet the Board",
             icon: "basketball",
-            body: "See the team that made all of this possible."
+            body: "Meet the dedicated team of volunteers that made all of this possible."
         },
         {
             link: "/volunteer",
@@ -30,24 +30,25 @@ const CardItems = () => {
     ];
     return (
         <div class="card">
-            <Row gutter={6} id="fancyRow" justify="space-around" align="middle" >
-            <Col xs={18} sm={8} md={8} lg={8} xl={8}>
-                <img className="arrow-photo" src="/assets/arrow.png" /></Col>
-                <Col xs={24} sm={15} md={15} lg={15} xl={15} id="secondCol">
-                <Row gutter={6} id="fancyRow" justify="space-around" align="middle" >
-                {carditems.map((carditems) =>
-                    (
-                        <Col xs={24} sm={12} md={12} lg={12} xl={12}>
-                            <NavLink to={carditems.link}>
-                                <div class="mainCard">
-                                    <box-icon name={carditems.icon} type='solid' color='#fff' size='lg'></box-icon>
-                                    <h3>{carditems.label}</h3>
-                                    <p>{carditems.body}</p>
-                                </div>
-                            </NavLink>
-                            <br></br>
-                        </Col>
-                    ))}
+            <Row gutter={6} id="fancyRow" justify="space-around" align="middle">
+                <Col xs={22} sm={20} md={20} lg={8} xl={8} style={{marginBottom: 10}}>
+                    <img className="arrow-photo" src="/assets/arrow.png"/></Col>
+                <Col xs={22} sm={20} md={20} lg={11} xl={15} id="secondCol">
+                    <Row gutter={8} id="fancyRow" justify="space-around" align="middle">
+                        {carditems.map((carditems) =>
+                            (
+                                <Col xs={24} sm={12} md={12} lg={12} xl={12}>
+                                    <NavLink to={carditems.link}>
+                                        <div class="mainCard">
+                                            <box-icon name={carditems.icon} type='solid' color="#DB3342"
+                                                      ></box-icon>
+                                            <h3>{carditems.label}</h3>
+                                            <p>{carditems.body}</p>
+                                        </div>
+                                    </NavLink>
+                                    <br></br>
+                                </Col>
+                            ))}
                     </Row>
                 </Col>
             </Row>
