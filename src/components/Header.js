@@ -8,7 +8,6 @@ import "../pages/FrontPage.css";
 
 const Header = () => {
     const [isPlaying, setIsPlaying] = useState(false);
-    // let song = new Audio("star_spangled_banner.mp3");
     const myRef = useRef();
 
     const togglePlay = () => {
