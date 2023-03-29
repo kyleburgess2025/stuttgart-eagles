@@ -1,6 +1,7 @@
 import {Affix, Menu} from "antd";
 import { useState, useRef } from "react";
 import { useMediaQuery } from 'react-responsive'
+import { slide as SlideMenu } from 'react-burger-menu';
 import "boxicons";
 import "./Header.css";
 import "antd/dist/antd.css";
@@ -45,7 +46,7 @@ const Header = () => {
     return (
         <div>
             <audio id="audio" ref={myRef} src="/assets/Ball_so_Hard.mp3" loop="loop" volume="0.5"></audio>
-            { isTabletOrMobile ? <SlideMenu id="mobilemenu">
+            {isTabletOrMobile ? <SlideMenu id="mobilemenu">
                     <a href="/board">Meet The Board</a>
                     <a href="/volunteer">Volunteer</a>
                     <a href="/donate">Donate</a>
