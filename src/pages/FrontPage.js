@@ -40,7 +40,7 @@ const FrontPage = () => {
             <div className="wrapper">
                 <div className="title_screen">
                         <img className="full_logo" src="/assets/Full_logo_cropped.png"/>
-                    <div class="title">
+                    <div className="title">
                         <div className="banner"></div>
                         <div class="title-text">
                             <h3>Demanding Excellence in Everything We Do</h3>

@@ -1,7 +1,7 @@
 import {Affix, Menu} from "antd";
-import { slide as SlideMenu } from 'react-burger-menu'
 import { useState, useRef } from "react";
 import { useMediaQuery } from 'react-responsive'
+import "boxicons";
 import "./Header.css";
 import "antd/dist/antd.css";
 import "../pages/Pages.css";
@@ -9,6 +9,7 @@ import "../pages/FrontPage.css";
 
 const Header = () => {
     const [isPlaying, setIsPlaying] = useState(false);
+    const [open, setOpen] = useState(false);
     // let song = new Audio("star_spangled_banner.mp3");
     const myRef = useRef();
     const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' })
@@ -17,6 +18,11 @@ const Header = () => {
         isPlaying ? myRef.current.pause() : myRef.current.play();
         setIsPlaying(!isPlaying);
         console.log(isPlaying)
+    };
+
+    const handleClick = () => {
+        setOpen(!open);
+        console.log(open)
     };
 
     const menu_items = [
