@@ -7,8 +7,8 @@ import googleCalendarPlugin from "@fullcalendar/google-calendar";
 import dayGridPlugin from "@fullcalendar/daygrid";
 import CardItems from "../components/CardItems";
 import Gallery from "./Gallery";
-import Header from "../components/Header"
-import Footer from "../components/Footer"
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 import {useEffect, useState} from "react";
 // todo: add links, add calendar, add footer, add logo to top
 
@@ -73,7 +73,6 @@ const FrontPage = () => {
                     </p>
                 </div>
                 <div className="cardgrid">
-
                     <div class="cards">
                         <CardItems/>
                     </div>
