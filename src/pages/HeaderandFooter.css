@@ -25,12 +25,10 @@
 
 #eagle_logo {
     margin-right: auto;
-    border-radius: 50px;
     size: 20px;
     transition: transform, background;
     transition-timing-function: ease;
     transition-duration: 400ms;
-    background: rgb(246, 246, 246);
 }
 
 #eagle_logo:hover {
