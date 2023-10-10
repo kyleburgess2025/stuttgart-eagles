@@ -14,7 +14,7 @@ const Header = () => {
   const [open, setOpen] = useState(false);
   // let song = new Audio("star_spangled_banner.mp3");
   const myRef = useRef();
-  const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1224px)" });
+  const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1000px)" });
 
   const togglePlay = () => {
     isPlaying ? myRef.current.pause() : myRef.current.play();
