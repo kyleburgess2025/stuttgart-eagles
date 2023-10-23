@@ -7,6 +7,7 @@ import Gallery from "./Gallery";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { useEffect, useState } from "react";
+import {Col, Row} from "antd";
 // todo: add links, add calendar, add footer, add logo to top
 
 let API_KEY = process.env.REACT_APP_API_KEY;
@@ -39,12 +40,12 @@ const FrontPage = () => {
   return (
     <div className="front-page">
       <img
-        src="/assets/Eagles Beach Banner.png"
+        src="/assets/Eagles_Beach_Banner.jpg"
         className="leftbanner"
         alt="Beach banner"
       />
       <img
-        src="/assets/Eagles Beach Banner.png"
+        src="/assets/Eagles_Beach_Banner.jpg"
         className="rightbanner"
         alt="Beach banner"
       />
@@ -54,7 +55,7 @@ const FrontPage = () => {
           <div className="title_screen">
             <img
               className="full_logo"
-              src="/assets/Full_logo_cropped.png"
+              src="/assets/Full_logo_cropped.jpg"
               alt="Logo"
             />
             <div className="title">
@@ -72,7 +73,7 @@ const FrontPage = () => {
             <br></br>
             <img
               className="photo-collage"
-              src="/assets/photo_collage-two.png"
+              src="/assets/photo_collage.webp"
             />
             <p class="hidden">
               The Stuttgart Eagles Basketball Club (SEBC) is made up of
@@ -95,6 +96,9 @@ const FrontPage = () => {
               character.{" "}
             </p>
           </div>
+              <div className="bodyParagraph">
+                <h1 class="hidden">Get Involved</h1>
+              </div>
           <div className="cardgrid">
             <div class="cards">
               <CardItems />
@@ -105,6 +109,7 @@ const FrontPage = () => {
           <div id="eventsList">
             <div className="bodyParagraph">
               <h2>Upcoming Events</h2>
+              <p>{events.length == 0 ? "No current upcoming events." : ""}</p>
             </div>
             <ul class="eventsList">
               {events.map((event) => (

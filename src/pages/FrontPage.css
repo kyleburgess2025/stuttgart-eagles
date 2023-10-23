@@ -21,6 +21,7 @@
         height: 100%;
         opacity: 60%;
     }
+
 }
 
 @media screen and (max-width: 1000px) {
@@ -91,7 +92,6 @@ img.full_logo {
     width: 60%;
     max-width: 70vh;
     margin-bottom: 15px;
-    animation: slidedown 1.2s 1.5s ease;
 }
 
 .title_screen {
@@ -117,10 +117,10 @@ img.full_logo {
 
 @keyframes slidein {
     0% {
-        transform: skewX(40deg) translateX(-100%);
+        width: 0px;
     }
     100% {
-        transform: skewX(0deg) translateX(0%);
+        width: 100%;
     }
 }
 
@@ -178,8 +178,9 @@ img.photo-collage {
 }
 
 .cardgrid {
-    background-color: #ff6074;
-    justify-content: center;
+    /*border:15px solid #5491d7;*/
+    border-left: none;
+    border-right: none;
     padding:1em 0em 1em 0em;
 }
 
@@ -189,25 +190,33 @@ img.photo-collage {
 
 
 img.arrow-photo {
-    max-height: 33em;
-    height: 100%;
+    width: 100%;
+    opacity: 90%;
 }
 
 .mainCard {
     font-family: 'Gothic A1', sans-serif;
-    padding: 5px 12px 5px 12px;
-    width: 90%;
-    border-radius: 5px;
-    color: #F3F4F5;
-    background-color: rgba(255, 255, 255, 0.13);
-    border-style: solid;
-    border-left: white;
-    border-right: white;
-    border-width: 7px;
+    color: white;
+    border-radius: 10px;
+    padding: 5px 8px 2px 8px;
     animation: slidedown;
     transition: scale 200ms ease;
 }
+.red {
+    background-color: #4c51a9;
+    box-shadow: 8px 8px 0px #3d4188;
+}
+.cyan{
+    background-color: #4c51a9;
+    box-shadow: 8px 8px 0px #3d4188;
+}
+.blue{
+    background-color: #4c51a9;
+    box-shadow: 8px 8px 0px #3d4188;
+}
+.blue h3 {
 
+}
 
 @media (min-width: 1000px) {
     .mainCard {
@@ -230,10 +239,10 @@ img.arrow-photo {
 .mainCard h3 {
     position: relative;
     z-index: 2;
-    margin-bottom: 4px;
+    margin-bottom: 2px;
     font-family: 'Gothic A1', sans-serif;
-    color: #F3F4F5;
-    font-size: 1.8em;
+    color: white;
+    font-size: 2.2rem;
     font-weight: 600;
 }
 
@@ -244,11 +253,11 @@ img.arrow-photo {
 }
 
 .mainCard box-icon {
-    opacity: .9;
+    opacity: .3;
     height: 90px;
     width: 90px;
     position: absolute;
-    transform: translate(-120%, -10%);
+    transform: translate(-145%, -10%);
     transition: transform 200ms ease;
 }
 

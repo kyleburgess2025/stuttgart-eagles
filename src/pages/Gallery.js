@@ -8,7 +8,7 @@ import "../pages/Gallery.css";
 
     const photos = [
         {
-            original: "/assets/younger_players_cropped.png",
+            original: "/assets/younger_players_cropped.jpg",
 
         },
         {
@@ -28,7 +28,7 @@ import "../pages/Gallery.css";
 
         },
         {
-            original: "/assets/huddle.jpg",
+            original: "/assets/huddle_cropped.jpg",
 
         },
         {
@@ -49,10 +49,6 @@ import "../pages/Gallery.css";
         },
         {
             original: "/assets/very_bright.jpg",
-
-        },
-        {
-            original: "/assets/victory.jpg",
 
         },
     ]
