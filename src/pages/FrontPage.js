@@ -7,7 +7,7 @@ import Gallery from "./Gallery";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { useEffect, useState } from "react";
-import {Col, Row} from "antd";
+import { Col, Row } from "antd";
 // todo: add links, add calendar, add footer, add logo to top
 
 let API_KEY = process.env.REACT_APP_API_KEY;
@@ -71,34 +71,32 @@ const FrontPage = () => {
           <div class="bodyParagraph">
             <h1 class="hidden">What We Do</h1>
             <br></br>
-            <img
-              className="photo-collage"
-              src="/assets/photo_collage.webp"
-            />
+            <img className="photo-collage" src="/assets/photo_collage.webp" />
             <p class="hidden">
-              The Stuttgart Eagles Basketball Club (SEBC) is made up of
-              Department of Defense dependents and local youth within the
-              Stuttgart, Germany community. We are going into our tenth year in
-              2023 as an organization. We operate as a non-profit organization
-              with 100% volunteers. SEBC travels locally and throughout Europe
-              dominating tournaments during basketball season and competing
-              against over 30 International Clubs annually. We represent the USA
-              in a positive manner, both athletically and in sportsmanship. SEBC
-              bridges a gap in the overseas military community for school-age
-              children who are not afforded the experience of competitive
-              Amateur Athletic Union (AAU) and middle school sports during their
-              adolescent years due to their parents serving our Nation abroad.
-              We are also excited to start an Eagles Cheer program this year! In
-              addition to basketball and cheer, we require our players maintain
-              a high grade point average and have no disciplinary problems. Our
-              goal is to not only give our kids a fighting chance athletically
-              with their stateside counterparts, but also to build kids with
-              character.{" "}
+              The Stuttgart Eagles Basketball Club (SEBC) and Cheer Team is made
+              up of Department of Defense dependents and local youth within the
+              Stuttgart, Germany community. We are going into our eleventh
+              season in 2023-2024 as an organization. We operate as a non-profit
+              organization with 100% volunteers. SEBC travels locally and
+              throughout Europe dominating tournaments during basketball season
+              and competing against over 30 International Clubs annually. We
+              represent the USA in a positive manner, both athletically and in
+              sportsmanship. SEBC bridges a gap in the overseas military
+              community for school-age children who are not afforded the
+              experience of competitive Amateur Athletic Union (AAU) and middle
+              school sports during their adolescent years due to their parents
+              serving our Nation abroad. Our cheer program offers the
+              opportunity to learn cheer skills, dance, tumbling and stunting!
+              In addition to basketball and cheer, we require our players
+              maintain a high grade point average and have no disciplinary
+              problems. Our goal is to not only give our kids a fighting chance
+              athletically with their stateside counterparts, but also to build
+              kids with character.{" "}
             </p>
           </div>
-              <div className="bodyParagraph">
-                <h1 class="hidden">Get Involved</h1>
-              </div>
+          <div className="bodyParagraph">
+            <h1 class="hidden">Get Involved</h1>
+          </div>
           <div className="cardgrid">
             <div class="cards">
               <CardItems />
