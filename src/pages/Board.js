@@ -51,16 +51,12 @@ const people = [
 const Board = () => {
   return (
     <div className="main">
-      <img
-        src="/assets/Eagles_Beach_Banner.jpg"
-        className="leftbanner"
-        alt="Beach banner"
-      />
-      <img
-        src="/assets/Eagles_Beach_Banner.jpg"
-        className="rightbanner"
-        alt="Beach banner"
-      />
+      <div className="leftbanner">
+        <img src="/assets/Eagles_Beach_Banner.jpg" alt="Beach banner" />
+      </div>
+      <div className="rightbanner">
+        <img src="/assets/Eagles_Beach_Banner.jpg" alt="Beach banner" />
+      </div>
       <Header />
       <div className="wrapper">
         <div className="bodyParagraph">

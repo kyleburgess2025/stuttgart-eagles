@@ -1,39 +1,3 @@
-@media screen and (min-width: 1000px) {
-    .front-page {
-        width: 60%;
-        margin: auto;
-    }
-
-    .leftbanner {
-        position: fixed;
-        z-index: 3;
-        left: 0;
-        width: 20%;
-        height: 100%;
-        opacity: 60%;
-    }
-
-    .rightbanner {
-        position: fixed;
-        z-index: 3;
-        right: 0;
-        width: 20%;
-        height: auto;
-        opacity: 60%;
-    }
-
-}
-
-@media screen and (max-width: 1000px) {
-    .leftbanner {
-        display: none;
-    }
-
-    .rightbanner {
-        display: none;
-    }
-}
-
 .title {
     position: absolute;
     transform: translateY(-170%);

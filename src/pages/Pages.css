@@ -4,6 +4,49 @@
     --red: #DB3342;
 }
 
+@media screen and (min-width: 1000px) {
+    .front-page {
+        width: 60%;
+        margin: auto;
+    }
+
+    .leftbanner {
+        left: 0;
+    }
+
+    .rightbanner {
+        right: 0;
+    }
+
+    .leftbanner, .rightbanner {
+        position: fixed;
+        z-index: 3;
+        width: 20%;
+        height: 100%;
+        opacity: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #2D2E4B;
+    }
+
+    .leftbanner img, .rightbanner img {
+        width: 100%;
+
+    }
+
+}
+
+@media screen and (max-width: 1000px) {
+    .leftbanner {
+        display: none;
+    }
+
+    .rightbanner {
+        display: none;
+    }
+}
+
 body {
     text-align: center;
     color: #272A4B;
