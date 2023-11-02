@@ -48,7 +48,7 @@ const FrontPage = () => {
   console.log(events);
 
   return (
-    <div className="front-page">
+    <div className="front-page main">
       <div className="leftbanner">
         <img src="/assets/Eagles_Beach_Banner.jpg" alt="Beach banner" />
       </div>

@@ -38,13 +38,10 @@ const Volunteer = () => {
               </p>
             </div>
             <div>
-              <img className="coachingpic" src="assets/coaching_cropped.webp" />
+              <img className="coachingpic" src="assets/coaching-min.jpg" />
             </div>
             <div>
-              <img
-                className="boardmempic"
-                src="/assets/teamwork-cropped.webp"
-              />
+              <img className="boardmempic" src="/assets/board.jpg" />
             </div>
             <div className="left">
               <h2>Board Members</h2>
@@ -70,10 +67,7 @@ const Volunteer = () => {
               </p>
             </div>
             <div>
-              <img
-                className="fundraisepic"
-                src="/assets/younger_players.webp"
-              />
+              <img className="fundraisepic" src="/assets/fundraise.jpg" />
             </div>
           </div>
         </div>
