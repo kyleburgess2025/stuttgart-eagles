@@ -2,7 +2,7 @@ import "antd/dist/antd.css";
 import "./FrontPage.css";
 import "boxicons";
 import CardItems from "../components/CardItems";
-import Gallery from "./Gallery";
+import Gallery from "../components/Gallery";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { useEffect, useState } from "react";
@@ -35,6 +35,17 @@ const FrontPage = () => {
       time.substr(time.lastIndexOf(" "), time.length)
     }`;
   }
+
+  function fixTime(date) {
+    let d = new Date(date);
+    let time = d.toLocaleTimeString();
+    return `${
+      time.substr(0, time.lastIndexOf(":")) +
+      time.substr(time.lastIndexOf(" "), time.length)
+    }`;
+  }
+
+  console.log(events);
 
   return (
     <div className="front-page">
@@ -111,7 +122,10 @@ const FrontPage = () => {
                   class="event"
                   style={{ whiteSpace: "pre-line" }}
                 >
-                  <p class="date">{fixDate(event.start.dateTime)}</p>
+                  <p class="date">
+                    {fixDate(event.start.dateTime)} -{" "}
+                    {fixTime(event.end.dateTime)}
+                  </p>
                   <div class="info">
                     <h3>{event.summary}</h3>
                     {event.location && <p>{event.location}</p>}
