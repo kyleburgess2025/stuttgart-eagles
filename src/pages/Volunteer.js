@@ -15,7 +15,7 @@ const Volunteer = () => {
       <Header />
       <div className="wrapper">
         <div className="bodyParagraph">
-          <h1>Volunteer Work</h1>
+          <h1 className="volunteerHeader">Volunteer Work</h1>
           <p>
             Our team relies on the compassionate work of our volunteers, and
             numerous volunteer position are open.
@@ -27,6 +27,9 @@ const Volunteer = () => {
           <br></br>
 
           <div className="vol-grid">
+            <div className="mobile">
+              <img className="coachingpic" src="assets/coaching-min.jpg" />
+            </div>
             <div className="right">
               <h2>Coaching</h2>
               <p>
@@ -37,7 +40,7 @@ const Volunteer = () => {
                 difference, reach out to us.
               </p>
             </div>
-            <div>
+            <div className="desktop">
               <img className="coachingpic" src="assets/coaching-min.jpg" />
             </div>
             <div>
@@ -55,6 +58,9 @@ const Volunteer = () => {
                 to help?
               </p>
             </div>
+            <div className="mobile">
+              <img className="fundraisepic" src="/assets/fundraise.jpg" />
+            </div>
             <div className="right">
               <h2>Fundraising</h2>
               <p>
@@ -66,7 +72,7 @@ const Volunteer = () => {
                 the community.
               </p>
             </div>
-            <div>
+            <div className="desktop">
               <img className="fundraisepic" src="/assets/fundraise.jpg" />
             </div>
           </div>

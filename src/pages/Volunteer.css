@@ -1,11 +1,3 @@
-.vol-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 400px));
-    padding: 0px 20px 20px 20px;
-    align-items: start;
-    justify-content: center;
-}
-
 .vol-grid h2{
     padding: 0px 14px 0px 14px;
 }
@@ -14,12 +6,8 @@
     padding: 1px 14px 1px 14px;
 }
 
-.left {
-    text-align: start;
-}
-
-.right {
-    text-align: end;
+.volunteerHeader {
+    padding-top: 30px;
 }
 
 img.coachingpic {
@@ -41,4 +29,33 @@ img.fundraisepic {
     width: 100%;
     max-width: 550px;
     border-radius: 2px;
+    margin-bottom: 30px;
+}
+
+@media screen and (max-width: 1000px) {
+    .desktop {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .mobile {
+        display: none;
+    }
+
+    .vol-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 400px));
+        padding: 0px 20px 20px 20px;
+        align-items: start;
+        justify-content: center;
+    }
+
+    .left {
+        text-align: start;
+    }
+    
+    .right {
+        text-align: end;
+    }
 }

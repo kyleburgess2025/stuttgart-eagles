@@ -8,6 +8,11 @@
 
 }
 
+.donate-list {
+    font-family: 'Gothic A1', sans-serif;
+    animation: slidedown 2s ease;
+}
+
 .donate-list h3 {
     font-family: "Century Gothic";
     color: #F3F4F5;
