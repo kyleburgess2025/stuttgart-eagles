@@ -263,7 +263,6 @@ p.date {
 @media only screen and (min-width: 400px) and (max-width: 980px){
     p.date {
         flex-basis: 29%;
-        color: red;
     }
 }
 
