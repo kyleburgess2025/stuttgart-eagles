@@ -290,3 +290,8 @@ h2.eventsList {
     text-decoration-color: #2c2e4b;
     text-decoration-thickness: 4px;
 }
+
+.front-page-wrapper {
+    position: relative;
+    min-height: 100vh;
+}

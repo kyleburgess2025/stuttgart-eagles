@@ -53,11 +53,11 @@ const FrontPage = () => {
         <img src="/assets/Eagles_Beach_Banner.jpg" alt="Beach banner" />
       </div>
       <div className="rightbanner">
-        <img src="/assets/Eagles_Beach_Banner.jpg" alt="Beach banner" />
+        <img src="/assets/cheer-banner.jpg" alt="Beach banner" />
       </div>
       <div className="front-page-inner">
         <Header />
-        <div className="wrapper">
+        <div className="front-page-wrapper">
           <div className="title_screen">
             <img
               className="full_logo"
