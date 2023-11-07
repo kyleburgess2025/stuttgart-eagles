@@ -31,6 +31,7 @@ const Header = () => {
     { label: <a href="/board">Meet The Board</a>, key: "bod" },
     { label: <a href="/volunteer">Volunteer</a>, key: "volunteer" }, // which is required
     { label: <a href="/donate">Donate</a>, key: "donate" }, // remember to pass the key prop
+    { label: <a href="/join">Join</a>, key: "join" },
     { label: <a href="/">Home</a>, key: "home" },
     // {label: (<div id="music">{isPlaying ? <box-icon color="white" class="small-icon" onClick={togglePlay} name='volume-full'></box-icon> : <box-icon color="white" class="small-icon" onClick={togglePlay} name='volume-mute'></box-icon>}</div>), key: "music"},
     {
@@ -75,6 +76,7 @@ const Header = () => {
           <a href="/board">Meet The Board</a>
           <a href="/volunteer">Volunteer</a>
           <a href="/donate">Donate</a>
+          <a href="/join">Join</a>
           <a href="/">Home</a>
           <div id="music">
             {isPlaying ? (

@@ -34,6 +34,10 @@
         width: 100%;
     }
 
+    .wrapper {
+        margin-top: 5%;
+    }
+
 }
 
 @media screen and (max-width: 1000px) {
@@ -43,6 +47,14 @@
 
     .rightbanner {
         display: none;
+    }
+
+    .bodyParagraph {
+        margin-top: 15%;
+    }
+
+    #mobilemenu {
+        margin-top: -15%;
     }
 }
 
@@ -168,4 +180,9 @@ img.eagle-photo {
 
 .aboutus {
     padding: 3em;
+}
+
+.no-bullets {
+    list-style-type: none;
+    padding-left: 0;
 }
