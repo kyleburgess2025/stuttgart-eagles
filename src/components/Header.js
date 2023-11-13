@@ -14,7 +14,7 @@ const Header = () => {
   const [open, setOpen] = useState(false);
   // let song = new Audio("star_spangled_banner.mp3");
   const myRef = useRef();
-  const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1000px)" });
+  const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1400px)" });
 
   const togglePlay = () => {
     isPlaying ? myRef.current.pause() : myRef.current.play();
@@ -29,6 +29,7 @@ const Header = () => {
 
   const menu_items = [
     { label: <a href="/board">Meet The Board</a>, key: "bod" },
+    { label: <a href="/partners">Partners</a>, key: "partners" },
     { label: <a href="/volunteer">Volunteer</a>, key: "volunteer" }, // which is required
     { label: <a href="/donate">Donate</a>, key: "donate" }, // remember to pass the key prop
     { label: <a href="/join">Join</a>, key: "join" },
@@ -74,6 +75,7 @@ const Header = () => {
       {isTabletOrMobile ? (
         <SlideMenu id="mobilemenu">
           <a href="/board">Meet The Board</a>
+          <a href="/partners">Partners</a>
           <a href="/volunteer">Volunteer</a>
           <a href="/donate">Donate</a>
           <a href="/join">Join</a>

@@ -6,6 +6,7 @@ import Board from "./pages/Board";
 import Donate from "./pages/Donate";
 import Volunteer from "./pages/Volunteer";
 import Join from "./pages/Join";
+import Partners from "./pages/Partners";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
@@ -18,6 +19,7 @@ root.render(
       <Route path="/donate" element={<Donate />} />
       <Route path="/volunteer" element={<Volunteer />} />
       <Route path="/join" element={<Join />} />
+      <Route path="/partners" element={<Partners />} />
     </Routes>
   </BrowserRouter>
 );

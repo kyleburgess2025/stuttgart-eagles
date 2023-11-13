@@ -1,0 +1,41 @@
+@media screen and (min-width: 1000px) {
+    .partner {
+        display: grid;
+        grid-template-columns: 33% 67%;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .partner-info {
+        margin: 0 20px 40px 20px;
+    }
+}
+
+.partner {
+    margin: 0 0 50px 0;
+}
+
+.partnerImgContainer {
+    width: 100%;
+}
+
+.partnerImg {
+    width: 100%;
+}
+
+.noBullets {
+    list-style-type: none;
+}
+
+.partner-info {
+    text-align: left;
+    font-size: 0.7em;
+}
+
+.partner-info p {
+    margin: 0;
+    padding: 0;
+}
