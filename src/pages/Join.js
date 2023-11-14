@@ -40,11 +40,6 @@ const Join = () => {
             School. Please fill out the registration form above prior to
             tryouts.
           </p>
-          <img
-            src="/assets/cheer-transparent.png"
-            alt="cheer"
-            id="cheer-transparent-img"
-          />
           <h2>Basketball Tryouts</h2>
           <p>Tryouts will be held at the following times:</p>
           <ul className="no-bullets tryout-times">
