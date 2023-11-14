@@ -28,6 +28,7 @@ const Header = () => {
   };
 
   const menu_items = [
+    { label: <a href="/login">Login</a>, key: "login" },
     { label: <a href="/partners">Partners</a>, key: "partners" },
     { label: <a href="/volunteer">Volunteer</a>, key: "volunteer" }, // which is required
     { label: <a href="/donate">Donate</a>, key: "donate" }, // remember to pass the key prop
@@ -78,6 +79,7 @@ const Header = () => {
           <a href="/volunteer">Volunteer</a>
           <a href="/donate">Donate</a>
           <a href="/join">Join</a>
+          <a href="/login">Login</a>
           <a href="/">Home</a>
           <div id="music">
             {isPlaying ? (
@@ -99,7 +101,12 @@ const Header = () => {
         </SlideMenu>
       ) : (
         <Affix className="menu">
-          <Menu items={menu_items} mode="horizontal" id="webnav" />
+          <Menu
+            className="header-menu"
+            items={menu_items}
+            mode="horizontal"
+            id="webnav"
+          />
         </Affix>
       )}
     </div>
