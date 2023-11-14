@@ -2,8 +2,17 @@ import "./Pages.css";
 import "./UserHome.css";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import { Navigate } from "react-router-dom";
+
+import { signOut, getAuth } from "firebase/auth";
+import { useAuthState } from "react-firebase-hooks/auth";
+const auth = getAuth();
 
 const UserHome = () => {
+  const [user] = useAuthState(auth);
+  if (!user) {
+    return <Navigate to="/login" />;
+  }
   return (
     <div className="main">
       <div className="leftbanner">
@@ -16,6 +25,7 @@ const UserHome = () => {
       <div className="wrapper">
         <div className="bodyParagraph">
           <h1>User Home Page</h1>
+          <button onClick={() => signOut(auth)}>Sign Out</button>
         </div>
         <Footer />
       </div>
