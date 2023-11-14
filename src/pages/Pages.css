@@ -39,7 +39,7 @@
     }
 }
 
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1000px) {
     .wrapper {
         margin-top: 5%;
         padding-top: 0;

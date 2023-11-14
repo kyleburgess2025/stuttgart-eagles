@@ -7,10 +7,10 @@ const Volunteer = () => {
   return (
     <div className="main">
       <div className="leftbanner">
-        <img src="/assets/Eagles_Beach_Banner.jpg" alt="Beach banner" />
+        <img src="/assets/eagles-banner.png" alt="Beach banner" />
       </div>
       <div className="rightbanner">
-        <img src="/assets/Eagles_Beach_Banner.jpg" alt="Beach banner" />
+        <img src="/assets/cheer-banner.png" alt="Beach banner" />
       </div>
       <Header />
       <div className="wrapper">
