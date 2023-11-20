@@ -50,10 +50,10 @@ const FrontPage = () => {
   return (
     <div className="front-page main">
       <div className="leftbanner">
-        <img src="/assets/eagles-banner.png" alt="Beach banner" />
+        <img src="/assets/eagles-banner.webp" alt="Beach banner" />
       </div>
       <div className="rightbanner">
-        <img src="/assets/cheer-banner.png" alt="Beach banner" />
+        <img src="/assets/cheer-banner.webp" alt="Beach banner" />
       </div>
       <div className="front-page-inner">
         <Header />

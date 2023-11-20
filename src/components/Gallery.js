@@ -8,7 +8,7 @@ import "./Gallery.css";
 
 const photos = [
   {
-    original: "/assets/younger_players_cropped.jpg",
+    original: "/assets/whole_team_blue.jpg",
   },
   {
     original: "/assets/waving_flag.jpg",
@@ -17,7 +17,7 @@ const photos = [
     original: "/assets/ballin.jpg",
   },
   {
-    original: "/assets/coaching.jpg",
+    original: "/assets/coaching-min.jpg",
   },
   {
     original: "/assets/happiness.jpg",

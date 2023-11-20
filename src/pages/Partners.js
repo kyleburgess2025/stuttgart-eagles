@@ -56,7 +56,7 @@ const partners = [
         </p>
       </>
     ),
-    image: "/assets/spouses-club.png",
+    image: "/assets/spouses-club.webp",
   },
   {
     name: "Jake Lacey",
@@ -95,10 +95,10 @@ const Partners = () => {
   return (
     <div className="main">
       <div className="leftbanner">
-        <img src="/assets/eagles-banner.png" alt="Beach banner" />
+        <img src="/assets/eagles-banner.webp" alt="Beach banner" />
       </div>
       <div className="rightbanner">
-        <img src="/assets/cheer-banner.png" alt="Beach banner" />
+        <img src="/assets/cheer-banner.webp" alt="Beach banner" />
       </div>
       <Header />
       <div className="wrapper">
