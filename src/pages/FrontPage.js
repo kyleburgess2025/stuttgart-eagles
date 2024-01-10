@@ -77,7 +77,7 @@ const FrontPage = () => {
           <div class="bodyParagraph">
             <h1 class="hidden">What We Do</h1>
             <br></br>
-            <img className="photo-collage" src="/assets/photo_collage.webp" />
+            <img className="photo-collage" src="/assets/home_collage.webp" />
             <p class="hidden">
               The Stuttgart Eagles Basketball Club (SEBC) and Cheer Team is made
               up of Department of Defense dependents and local youth within the
